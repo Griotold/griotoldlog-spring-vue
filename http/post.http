@@ -1,0 +1,21 @@
+### 게시글 생성
+POST localhost:8080/posts
+Content-Type: application/json
+
+{
+  "title": "글 제목 1",
+  "content": "컨텐츠 1"
+}
+
+### 게시글 단건 조회
+GET localhost:8080/posts/1
+Content-Type: application/json
+
+### 게시글 수정
+PATCH localhost:8080/posts/1
+Content-Type: application/json
+
+{
+  "title": "수정된 글 제목 1",
+  "content": "수정된 콘텐츠 1"
+}
